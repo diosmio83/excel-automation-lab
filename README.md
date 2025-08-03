@@ -56,6 +56,15 @@ Automated Excel processing for LIMS data using VBA and Power Automate Desktop (o
    - Color code the rows and show a summary message
    - Log unmatched barcodes in a new sheet named `ImportLog`
   
+## 🎨 Row Color Coding
+
+- ✅ **Green** – Successful match
+- ⚠️ **Yellow** – Multiple matches found (duplicates)
+- ❌ **Red** – No match found
+
+## 🧪 Dummy Data Notice
+
+The included Excel files use **synthetic (fake) data** for demonstration purposes only. All identifiers, names, and values are fictional and randomly generated.
   
 📁 Flow screenshots: `/screenshots/`  
 📁 Flow export (PDF): `PowerAutomate_UIFlow.pdf` *(optional)*
