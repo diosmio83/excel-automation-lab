@@ -118,11 +118,11 @@ Sub FillFixedValues()
 
     colQ = GetColumnIndexByHeader(ws, "Parent Volume Unit")
     colG = GetColumnIndexByHeader(ws, "Aliquot Volume Unit")
-    colI = GetColumnIndexByHeader(ws, "HIV Status")
+    colI = GetColumnIndexByHeader(ws, "Status")
 
     If colQ > 0 Then ws.Range(ws.Cells(2, colQ), ws.Cells(lastRow, colQ)).Value = "mL"
     If colG > 0 Then ws.Range(ws.Cells(2, colG), ws.Cells(lastRow, colG)).Value = "uL"
-    If colI > 0 Then ws.Range(ws.Cells(2, colI), ws.Cells(lastRow, colI)).Value = "HIV inactivated"
+    If colI > 0 Then ws.Range(ws.Cells(2, colI), ws.Cells(lastRow, colI)).Value = "inactivated"
 End Sub
 
 Function GetColumnIndexByHeader(ws As Worksheet, headerName As String) As Long
@@ -266,8 +266,8 @@ Sub ImportProcessingData_FixedColumns_LMN_ABFO()
            "?? Details in sheet 'ImportLog'" & vbCrLf & _
            "? Duration: " & Format(duration, "0.0") & " seconds", vbInformation
 End Sub
-    ChDir "C:\Users\DiosMio\Downloads"
-    ActiveWorkbook.SaveAs Filename:="C:\Users\DiosMio\Downloads\Mappe1makro.xlsm" _
+    ChDir "C:\Users\xxxxxx\Downloads"
+    ActiveWorkbook.SaveAs Filename:="C:\Users\xxxxxx\Downloads\Mappe1makro.xlsm" _
         , FileFormat:=xlOpenXMLWorkbookMacroEnabled, CreateBackup:=False
     ActiveWorkbook.Save
 
