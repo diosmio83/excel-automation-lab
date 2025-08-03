@@ -43,6 +43,20 @@ Automated Excel processing for LIMS data using VBA and Power Automate Desktop (o
 4. PAD waits for macro to finish
 5. Fully automated process: no Excel interaction required
 
+## 🛠️ How to Use VBA Script
+
+1. Open `processing_data_dummy.xlsx` in Excel.
+2. Import the module `mod_ProcessingImport.bas` via the VBA editor (`ALT + F11`).
+3. Run the macro `RunStepsThenImport`.
+4. When prompted, select the source file `source_data_dummy.xlsx`.
+5. The macro will:
+   - Clean, sort, and format the processing file
+   - Match barcodes from column L with entries in column I of the source file
+   - Fill columns A, B, F, and O with metadata if matched
+   - Color code the rows and show a summary message
+   - Log unmatched barcodes in a new sheet named `ImportLog`
+  
+  
 📁 Flow screenshots: `/screenshots/`  
 📁 Flow export (PDF): `PowerAutomate_UIFlow.pdf` *(optional)*
 
